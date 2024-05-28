@@ -1,0 +1,10 @@
+USE benfordapp;
+
+CREATE TABLE tokens
+(
+    token varchar(128) not null, -- authentication token
+    userid int not null, -- user that token identifies
+    expiration_utc datetime not null, -- token's expiration date/time UTC
+    PRIMARY KEY (token),
+    FOREIGN KEY (userid) REFERENCES users(userid)
+);
