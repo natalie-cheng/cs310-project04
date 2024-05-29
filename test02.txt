@@ -1,3 +1,0 @@
-{
-  "body": "{ \"username\": \"p_sarkar\", \"password\": \"fred123\", \"duration\": \"2\" }"
-}
